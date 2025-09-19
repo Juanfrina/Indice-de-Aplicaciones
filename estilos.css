@@ -1,30 +1,56 @@
 /* estilos.css */
+
+/* Cómo se ve el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: Arial, sans-serif; /* Fuente sencilla y clara */
+    margin: 0; /* Quitamos los márgenes por defecto */
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f9f9f9; /* Fondo clarito */
+    color: #333;
 }
 
+/* Título principal */
 h1 {
     text-align: center;
     margin-top: 20px;
+    font-size: 2.5em;
+    color: #6C757D; /* Gris suave */
+    text-decoration: underline; /* Subrayado para destacar */
 }
 
+/* Contenedor de las columnas */
 .contenedor {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     width: 80%;
+    gap: 20px;
 }
 
+/* Estilo de las columnas */
 .columna {
     flex: 1;
-    margin: 0 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animación suave al pasar el ratón */
+}
+
+/* Efecto al pasar el ratón */
+.columna:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos dentro de las columnas */
+.columna h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
 }
